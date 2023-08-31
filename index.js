@@ -1,9 +1,7 @@
 'use strict';
 
 const dynamoose = require('dynamoose');
-
 const schmea = new dynamoose.Schema({id: String, name: String, age: Number });
-
 const peopleModel = dynamoose.model('people', schmea );
 
 exports.handler = async (event) => {
